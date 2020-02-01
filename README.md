@@ -37,8 +37,8 @@ Some function keys are mapped to macros to save the `.csd` file, compile it and 
 
 - ` F8` - write current `.csd` to disk, compile it without extra command line flags
 - ` F9` - write current `.csd` to disk, compile it and send to audio card in realtime (`-o dac`)
-- `F10` - write current `.csd` to disk, compile it and write it to file `./test.wav`, return to Vim
-- `F11` - write current `.csd` to disk, compile it and write it to file `./test.wav`, stay in console (for debugging)
+- `F10` - write current `.csd` to disk, compile it and write it to file `./filename.wav`, convert it to mp3, return to Vim
+- `F11` - write current `.csd` to disk, compile it and write it to file `./filename.wav`, stay in console (for debugging)
 - `F12` - play (with the command `aplay`) last compiled file, return to Vim 
 
 These macros were designed for GNU/Linux, they might need adjustments for other environments.
