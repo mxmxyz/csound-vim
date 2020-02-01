@@ -13,7 +13,7 @@
 " saves present file, compiles and sends to audio output, returns to vim
 :noremap <F9> :up <CR> :!csound -b4096 -B4096 -d -o devaudio "%:p" <CR> <CR>
 " saves present file, compiles and writes output to file, returns to vim
-:noremap <F10> :up <CR> :!csound -W -d -o "%:p:r.wav" "%:p" <CR> <CR>
+:noremap <F10> :up <CR> :!csound -W -d -o "%:p:r.wav" "%:p" && ffmpeg -i "%:p:r.wav" "%:p:r.mp3" <CR> <CR>
 " saves present file, compiles and writes output to file, stays in console (for debugging) 
 :noremap <F11> :up <CR> :!csound -W -d -o "%:p:r.wav" "%:p" <CR>
 " plays last compiled file
